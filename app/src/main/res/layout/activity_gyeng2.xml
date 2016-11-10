@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <HorizontalScrollView
+                        android:id="@+id/scroll_hor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="   서울 강남   "
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView"
+                                android:onClick="mOnClick"
+                                />
+                            <TextView
+                                android:text="   서울 강북   "
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView1"
+                                android:onClick="mOnClick"/>
+                            <TextView
+                                android:text="   경기 북부   "
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView2"
+                                android:onClick="mOnClick"/>
+                            <TextView
+                                android:text="   경기 남부   "
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3"
+                                android:onClick="mOnClick"
+                                android:textColor="#EA1365"/>
+                            <TextView
+                                android:text="   부산   "
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView4"
+                                android:onClick="mOnClick"/>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+
+                    <ScrollView
+                        android:id="@+id/scroll_ver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <ImageButton
+                                android:id="@+id/img1"
+                                android:layout_width="match_parent"
+                                android:layout_height="500px"
+                                android:padding="10px"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/su2"
+                                android:onClick="WonClick"
+
+                                />
+                            <ImageButton
+                                android:id="@+id/img2"
+                                android:layout_width="match_parent"
+                                android:layout_height="500px"
+                                android:padding="10px"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/su3"
+                                android:onClick="WonClick"
+
+                                />
+                            <ImageButton
+                                android:id="@+id/img3"
+                                android:layout_width="match_parent"
+                                android:layout_height="500px"
+                                android:padding="10px"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/su1"
+                                android:onClick="WonClick"
+
+                                />
+
+
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+
+
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>
